@@ -1,0 +1,64 @@
+
+
+ .container, .container-fluid {
+   background-color: #f3f6f9;
+   border: 4px solid #cfc;
+ }
+
+.container .container,
+.container-fluid .container-fluid,
+.explicacio
+{
+  border: 0;
+  background: none;
+}
+
+.explicacio {
+  margin-bottom: 30px;
+  background: #eee;
+  color: #333;
+  font-family: monospace;
+  font-size: 1.1em;
+  padding: 25px;
+}
+
+ .parxe {
+   background-color: #cfc;
+   color: #333;
+   margin-top: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+
+ .row {
+   border: 4px solid #fec;
+   background: #fec;
+   color: #333;
+   padding: 10px;
+ }
+
+
+
+ .row>header {
+   /* color: white; */
+   margin-bottom: 10px;
+ }
+
+ .row [class^=col]:nth-child(4n) {
+   background-color: #fc9;
+ }
+
+ .row>[class^=col]:nth-child(4n+1) {
+   background-color: #9cf;
+ }
+
+ .row>[class^=col]:nth-child(4n+2) {
+   background-color: #f9c;
+ }
+ .row>[class^=col]:nth-child(4n+3) {
+   background-color: #9f9;
+ }
+
+
+
+ 

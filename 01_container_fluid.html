@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>01 - Container and Container-fluid - Bootstrap 4</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body>
+
+  <header class="jumbotron">
+    <h1>BOOTSTRAP'S GRID SELF-EXPLAINED SAMPLES</h1>
+    <h3>01 - About the classes container, container-fluid, row, col,... on Bootstrap</h3>
+    <a href="index.html" class="fa fa-arrow-left" aria-hidden="true"> Menu</a>
+  </header>
+
+  <div class="parxe container">class="container"</div>
+  <div class="container">
+    <div class="row">
+      <header class="container">
+        class="row"
+      </header>
+      <div class="col">class="col"</div>
+      <div class="col">class="col"</div>
+      <div class="col">class="col"</div>
+    </div>
+  </div>
+
+  <div class="parxe container-fluid">class="container-fluid"</div>
+  <div class="container-fluid">
+    <div class="row">
+      <header class="container-fluid">
+        class="row"
+      </header>
+      <div class="col">class="col"</div>
+      <div class="col">class="col"</div>
+      <div class="col">class="col"</div>
+      <div class="col">class="col"</div>
+    </div>
+  </div>
+
+<div class="container explicacio">
+  <strong>Notes:</strong>
+  <p>The classes <strong>container</strong> and <strong>container-fluid</strong> are required. Both are containers of rows and they delimite maximum width of contents, being <strong>container-fluid</strong> as wider as the browser's window is. Meanwhile class <strong>container</strong> is as wider as the max-width defined even is less than the browser's window.</p>
+  <p>The class <strong>row</strong> is the father element of the columns' classes.</p>
+  <p>The class <strong>col</strong> is the more elemental defined class for columns. It's used for defining width of columns in extra small devices(less than 576px). </p>
+
+
+
+</div>
+
+
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

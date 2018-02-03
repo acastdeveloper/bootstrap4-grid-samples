@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>03 - Break points - BOOTSTRAP'S GRID</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1>BOOTSTRAP'S GRID SELF-EXPLAINED SAMPLES</h1>
+    <h3>Breakpoints. The media queries.</h3>
+        <a href="index.html" class="fa fa-arrow-left" aria-hidden="true"> Menu</a>
+  </header>
+
+  <div class="container explicacio">
+    <h2>Introduction</h2>
+    <p>The Bootstrap's grid phylosophy was designed for Twitter's website that was thinked for mobile first. That's because media queries begins from smaller devices to biggers.</p>
+    <p>These are the Bootstrap's breakpoints (media queries):</p>
+
+    <table class="table table-bordered table-light table-striped">
+       <thead>
+         <tr>
+           <th>Device</th>
+           <th>Screen width</th>
+           <th>Class prefix</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Extra Small</td>
+           <td>&lt;576px</td>
+           <td>.col-</td>
+         </tr>
+         <tr>
+           <td>Small</td>
+           <td>&gt;=576px</td>
+           <td>.col-sm-</td>
+         </tr>
+         <tr>
+           <td>Medium</td>
+           <td>&gt;=798px</td>
+           <td>.col-md-</td>
+         </tr>
+         <tr>
+           <td>Large</td>
+           <td>&gt;=992px</td>
+           <td>.col-lg-</td>
+         </tr>
+         <tr>
+           <td>Extra Large</td>
+           <td>&gt;=1200px</td>
+           <td>.col-xl-</td>
+         </tr>
+       </tbody>
+     </table>
+
+
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+      <div class="col-1">col-1</div>
+    </div>
+    <div class="row">
+      <div class="col-3">col-3</div>
+      <div class="col-3">col-3</div>
+      <div class="col-3">col-3</div>
+      <div class="col-3">col-3</div>
+    </div>
+    <div class="row">
+      <div class="col-2">col-2</div>
+      <div class="col-2">col-2</div>
+      <div class="col-2">col-2</div>
+      <div class="col-2">col-2</div>
+      <div class="col-2">col-2</div>
+      <div class="col-2">col-2</div>
+    </div>
+    <div class="row">
+      <div class="col-4">col-4</div>
+      <div class="col-4">col-4</div>
+      <div class="col-2">col-2</div>
+      <div class="col-2">col-2</div>
+    </div>
+    <div class="row">
+      <div class="col-3">col-3</div>
+      <div class="col-3">col-3</div>
+      <div class="col-2">col-2</div>
+      <div class="col-4">col-4</div>
+    </div>
+  </div>
+
+
+<div class="container explicacio">
+  <strong>Notes:</strong>
+<p>The Bootstrap's grid allows a maximum of 12 columns per row.</p>
+<p>The suffix's "-n" is used to specify the number of columns we want that every element must ocupy.</p>
+<p>The sum of this suffix's numbers per row must be 12 or less. In case total number of columns ocupies more than 12 Bootstrap will reorganize diferently (See bellow).</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+    <div class="col">Content of the column with <strong>class="col"</strong>.</div>
+  </div>
+</div>
+
+<div class="container explicacio">
+  <strong>Notes:</strong>
+  <p>If we don't specify a number, the Bootstrap's grid redistributes automatically columns considering their contents among other considerations.</p>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+  </div>
+  <div class="row">
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+  </div>
+  <div class="row">
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+  </div>
+  <div class="row">
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+  </div>
+</div>
+
+<div class="container explicacio">
+  <strong>Notes:</strong>
+  <p>If we don't specify the suffix's number and there are less columns than 12 Bootstrap redistributes them in the same way.</p>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">class="col"</div>
+    <div class="col">class="col"</div>
+    <div class="col-auto">class="col-auto"</div>
+  </div>
+</div>
+
+<div class="container explicacio">
+  <strong>Notes:</strong>
+  <p>If we use the suffix "-auto" to an element this takes the minimum width enought to wrapp its content.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
